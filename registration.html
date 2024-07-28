@@ -2,19 +2,69 @@
 <html>
 <head>
 <title>application form</title>
+<style>
+    body
+    {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: yellow;
+    }
+    .container {
+        max-width: 600px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    .form-group textarea {
+        resize: vertical;
+    }
+    .form-group button {
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .form-group button:hover {
+        background-color: #0056b3;
+    }
+</style>
 <body bgcolor="yellow" text="black" align="center">
 <big>
-
-<legend>EMPLOYEE REGISTRATION</legend>
-
+    <div class="container">
+        <h3><i>Employee Registration</i></h3>
+        <form action="/submit-employee" method="post">
 <form>
 <fieldset>
+<i>
 <pre>
 Employee Id:        <input type="text" placeholder="Emp Id" required/>
 
 Full name:          <input type="text" placeholder="name" required/>
 
 Designation:        <input type="text" placeholder="designation" required/>
+
+Salary:             <input type="text" placeholder="salary" required/>
 
 Date of birth:      <input type="text" placeholder="dd-mm-yyyy" required/>
 
@@ -73,7 +123,7 @@ State:              <input type="text" placeholder="state name" required/>
 
 
 
-
+</i>
 </big>
 </fieldset>
 </pre>
